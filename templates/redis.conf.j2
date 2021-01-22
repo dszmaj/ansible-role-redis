@@ -1,6 +1,7 @@
 # {{ ansible_managed }}
 
 daemonize yes
+supervised systemd
 pidfile /var/run/redis/{{ redis_daemon }}.pid
 port {{ redis_port }}
 bind {{ redis_bind_interface }}
